@@ -1,0 +1,24 @@
+{
+    "name": "mi-app-pedidos",
+    "version": "1.0.0",
+    "description": "Aplicación de escritorio para visualizar pedidos",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "nodemon --watch src --exec electron .",
+        "build": "electron-builder"
+    },
+    "author": "Tu Nombre",
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^33.2.1",
+        "electron-builder": "^25.1.8",
+        "firebase": "^11.0.2"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "electron-reload": "^2.0.0-alpha.1",
+        "nodemon": "^3.0.2",
+        "wait-on": "^8.0.1"
+    }
+}

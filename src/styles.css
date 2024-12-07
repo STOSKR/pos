@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pedidos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.pedidos-section {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pedidos-section h2 {
+    color: #444;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.pedidos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pedido-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+    cursor: pointer;
+}
+
+.pedido-resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.oculto {
+    display: none;
+}
+
+.pedido-detalles {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.btn-expandir {
+    background: #6c757d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-expandir:hover {
+    background: #5a6268;
+}
+
+.pedido-card.pendiente {
+    border-left-color: #ffc107;
+}
+
+.pedido-card.aceptado {
+    border-left-color: #28a745;
+}
+
+.pedido-card.cancelado {
+    border-left-color: #dc3545;
+}
+
+.pedido-info {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.pedido-acciones {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-aceptar {
+    background: #28a745;
+    color: white;
+}
+
+.btn-cancelar {
+    background: #dc3545;
+    color: white;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sistema de Pedidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Pedidos</h1>
+
+        <div class="pedidos-container">
+            <div class="pedidos-section">
+                <h2>Pendientes</h2>
+                <div id="pedidos-pendientes" class="pedidos-list"></div>
+            </div>
+
+            <div class="pedidos-section">
+                <h2>Aceptados</h2>
+                <div id="pedidos-aceptados" class="pedidos-list"></div>
+            </div>
+
+            <div class="pedidos-section">
+                <h2>Cancelados</h2>
+                <div id="pedidos-cancelados" class="pedidos-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        window.initializeApp = initializeApp;
+        window.getFirestore = getFirestore;
+    </script>
+
+    <script src="renderer.js" type="module"></script>
+</body>
+
+</html>
